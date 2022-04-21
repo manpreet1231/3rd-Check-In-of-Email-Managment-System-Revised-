@@ -1,0 +1,177 @@
+﻿body 
+{
+	background-color: white;
+}
+
+.btnn
+{
+	background-color:#0099FF;
+	font-weight: 700;
+	color:White;
+	text-align: center;
+	}
+	
+	.btnn:hover
+{
+	background-color:Transparent;
+
+	font-weight:bold;
+	color:#0099FF;
+	}
+	
+
+#head
+{
+	width:82%;
+	height:90px;
+	text-align:center;
+	margin-left:64px;
+	font-weight: 700;
+	font-size: xx-large;
+}
+#body
+{
+	width:90%;
+	height:auto;
+
+	margin-left:60px;
+	
+}
+
+#left
+{width:195px;
+	height:500px;
+	text-align:left;
+	
+}
+
+#right
+{width:158px;
+	height:602px;
+	
+	
+}
+#mid
+{width:690px;
+	height:auto;
+	
+}	
+	#login
+	{
+		text-align:center;
+		width:400px;
+		height:400px;
+		margin-left:400px;
+		margin-top: 70px;
+		
+		}
+		.lbl
+		{
+			font-size: medium; font-weight: bold; color: #003300; text-align: right; font-family: Calibri;
+			}
+			
+			.tbl
+			{
+				border: 2px solid #003300;
+	border-bottom-left-radius:8px;
+					border-bottom-right-radius:8px;
+					border-top-left-radius:8px;
+					border-top-right-radius:8px;
+				
+					width:100%;
+	height: 405px;
+}
+.tbll
+			{
+				border: 2px solid #003300;
+	border-bottom-left-radius:8px;
+					border-bottom-right-radius:8px;
+					border-top-left-radius:8px;
+					border-top-right-radius:8px;
+				
+					width:100%;
+	
+}
+
+
+.mm
+{
+	
+	
+	}
+.mmb:hover
+{
+	background:#FFE6DF;
+	border-bottom-left-radius:8px;
+					border-bottom-right-radius:8px;
+					border-top-left-radius:8px;
+					border-top-right-radius:8px;
+	}
+.
+
+
+#nik
+{
+		text-align:center;
+		width:600px;
+		height:400px;
+		margin-left:400px;
+		margin-top: 70px;
+		
+		}
+		
+		.leftmnu
+		{
+			color:Teal; 
+			font-family:Calibri;
+			font-size:medium;
+			font-weight:bold;
+			text-decoration:none;
+			}
+			.leftmnu:hover
+		{
+			color:Red;
+		
+			}
+			
+			
+			.lbll
+		{
+			font-size: medium; font-weight: bold; text-align:right; color: #003300; 
+font-family: Calibri;
+			}
+			
+			
+			.tl
+		{
+			font-size: medium; font-weight: bold; text-align:left; color: #003300; font-family: Calibri;
+			}
+			
+				.chk
+		{
+			font-size: medium; font-weight: bold; text-align:right; color:Purple; font-family: Calibri;
+			}
+			
+		.lblmsg
+		{
+			font-size: medium; text-align:right; color:Blue; font-family: Calibri;
+			}
+			
+			
+		.grid
+		{
+			font-size: medium; font-weight: bold; text-align:center; color:Blue; font-family: Calibri;
+			}
+			
+			
+			
+		.txtbox
+		
+		{width:205px; height:25px; text-align:left;
+		 font-size: medium; font-weight: bold; font-family: Calibri;
+			}
+			.txt
+			{
+				background:#F9FFFE;
+				border: 1px solid #008080;
+				}

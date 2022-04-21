@@ -1,0 +1,253 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Home.master.cs" Inherits="Home" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>    <link href="Style.css" rel="Stylesheet" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 90%;
+            height: 319px;
+        }
+        .style4
+        {
+            width: 322px;
+        }
+        .style5
+        {
+            width: 229px;
+            color: #0066FF;
+            font-size: 30pt;
+            text-align: left;
+        }
+        .style7
+        {
+        }
+        .style8
+        {
+            width: 58px;
+        }
+        .style9
+        {
+            width: 96px;
+        }
+        .style13
+        {
+            width: 100px;
+        }
+        .style14
+        {
+            font-family: Calibri;
+            font-weight: bold;
+        }
+        .style17
+        {
+            height: 11px;
+        }
+        .style19
+        {
+            height: 12px;
+        }
+        .style20
+        {
+            height: 12px;
+        }
+        .style21
+        {
+            font-size: large;
+            font-family: Calibri;
+            color: #008080;
+            text-align: right;
+        }
+        .style22
+        {
+            color: #660066;
+        }
+        .style24
+        {
+            font-size: medium;
+            font-family: Calibri;
+        }
+        .style26
+        {
+            font-size: 35pt;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="head" style="border: thin solid #008080">
+       
+        <table style="width: 97%">
+            <tr>
+                <td class="style22" rowspan="2">
+                    <asp:Image ID="Image2" runat="server" Height="60px" ImageUrl="~/img/mm.png" 
+                        Width="60px" />
+                </td>
+                <td class="style5" rowspan="2">
+                    <span class="style26">M</span>ail <span class="style26">S</span>erver</td>
+                <td class="style21" colspan="2">
+                    Search Mail :</td>
+                <td class="style4">
+                    <asp:TextBox ID="txtserch1" runat="server" Height="25px" Width="302px" 
+                        CssClass="txt"></asp:TextBox>
+                </td>
+                <td class="style8">
+                    <asp:Button ID="btnfind" runat="server" CssClass="btnn" Height="35px" 
+                        Text="Find Mail" Width="117px" onclick="btnfind_Click" />
+                </td>
+                <td class="style24">
+                    <asp:LinkButton ID="LinkButton2" runat="server" Font-Bold="True" 
+                        Font-Names="Calibri" Font-Size="Medium" Font-Underline="False" 
+                        ForeColor="#CC0066" PostBackUrl="~/changpassword.aspx">Chnage Password</asp:LinkButton>
+                </td>
+            </tr>
+            <tr>
+                <td class="style7">
+                    &nbsp;</td>
+                <td class="style9">
+                    &nbsp;</td>
+                <td class="style4">
+                    &nbsp;</td>
+                <td class="style8">
+                    &nbsp;</td>
+                <td class="style24">
+                    <asp:LinkButton ID="LinkButton3" runat="server" Font-Bold="True" 
+                        Font-Names="Calibri" Font-Size="Medium" Font-Underline="False" 
+                        ForeColor="#CC0066" PostBackUrl="~/Default.aspx">LogOut</asp:LinkButton>
+                </td>
+            </tr>
+        </table>
+       
+    </div>
+    <div id="body">
+    
+        <table class="style1">
+            <tr>
+                <td valign="top">
+                    &nbsp;</td>
+                <td valign="top">
+                    &nbsp;</td>
+                <td valign="top">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td valign="top">
+                    <div id="left">
+                        <table class="style1" style="border: thin solid #008080; width: 100%;">
+                            <tr>
+                                <td style="border-bottom: thin solid #008080; text-align: center;" 
+                                    bgcolor="#D7FFD7">
+                                <asp:Label ID="lblwelcome" runat="server" BorderColor="#660066" 
+                                    
+                                        style="font-size: medium; font-family: Calibri; font-weight: 700; color: #FF3300;"></asp:Label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center;" class="style17">
+                                    </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center;">
+                                    <asp:Image ID="Image1" runat="server" Height="129px" ImageUrl="~/img/boy.jpeg" 
+                                        Width="108px" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <asp:LinkButton ID="linkuploadimage" runat="server" 
+                                        PostBackUrl="~/Account.aspx" style="color: #006666">Change Image</asp:LinkButton>
+                                    &nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td style="border-top: thin solid #008080; text-align: center;" class="mm">
+                                <a href="Compose.aspx" class="leftmnu">Compose</a></td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center" class="mm">
+                                     <a href="SMS.aspx" class="leftmnu">Send SMS</a></td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center" class="mm">
+                                    <a href="Inbox.aspx" class="leftmnu">Inbox</a></td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center" class="mm">
+                                   <a href="Sent.aspx" class="leftmnu"> Sent</a></td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center" class="mm">
+                                   <a href="Trash.aspx" class="leftmnu"> Trash</a></td>
+                            </tr>
+                            <tr>
+                                <td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #008080" 
+                                    class="style20">
+                                    </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center">
+                                   <a href="Contact.aspx" class="leftmnu"> My Contact</a></td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center">
+                                   <a href="calender.aspx" class="leftmnu"> Calender</a></td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center">
+                                   <a href="Chat.aspx" class="leftmnu"> Online Chat</a></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <a href="Account.aspx" class="leftmnu">Account</a></td>
+                            </tr>
+                            <tr>
+                                <td class="style19" 
+                                    style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #008080">
+                                    </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <asp:Calendar ID="Calendar1" runat="server" BackColor="White" 
+                                        BorderColor="#999999" CellPadding="4" DayNameFormat="Shortest" 
+                                        Font-Names="Verdana" Font-Size="8pt" ForeColor="Black" Height="182px" 
+                                        Width="185px">
+                                        <SelectedDayStyle BackColor="#666666" Font-Bold="True" ForeColor="White" />
+                                        <SelectorStyle BackColor="#CCCCCC" />
+                                        <WeekendDayStyle BackColor="#FFFFCC" />
+                                        <TodayDayStyle BackColor="#CCCCCC" ForeColor="Black" />
+                                        <OtherMonthDayStyle ForeColor="#808080" />
+                                        <NextPrevStyle VerticalAlign="Bottom" />
+                                        <DayHeaderStyle BackColor="#CCCCCC" Font-Bold="True" Font-Size="7pt" />
+                                        <TitleStyle BackColor="#999999" BorderColor="Black" Font-Bold="True" />
+                                    </asp:Calendar>
+                                </td>
+                            </tr>
+                        </table>
+                    </div></td>
+                <td valign="top">
+                    <div id="mid">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div></td>
+                
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+            </tr>
+        </table>
+    
+    </div>
+    </form>
+</body>
+</html>

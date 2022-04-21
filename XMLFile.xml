@@ -1,0 +1,26 @@
+﻿<Advertisements>
+  <Ad>
+    <ImageUrl>ad\ad1.bmp</ImageUrl>
+    <AlternateText>nikff</AlternateText>
+    <NavigateUrl>http://www.google.com</NavigateUrl>
+    <Impressions>12</Impressions>
+      </Ad>
+  <Ad>
+    <ImageUrl>ad\ad4.bmp</ImageUrl>
+    <AlternateText>nikabc</AlternateText>
+    <NavigateUrl>http://www.google.com</NavigateUrl>
+    <Impressions>12</Impressions>
+   </Ad>
+  <Ad>
+    <ImageUrl>ad\ad3.bmp</ImageUrl>
+    <AlternateText>nikxyz</AlternateText>
+      <NavigateUrl>http://www.google.com</NavigateUrl>
+      <Impressions>12</Impressions>
+  </Ad>
+  <Ad>
+    <ImageUrl>ad\ad4.bmp</ImageUrl>
+    <AlternateText>nikhh</AlternateText>
+    <NavigateUrl>http://www.google.com</NavigateUrl>
+    <Impressions>11</Impressions>
+</Ad>
+  </Advertisements>
